@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
+import { FaSearch } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import logo from '../../Img/Logo/amazon-logo-png-2400x2001_abf78dd4_transparent_202878.png.png'
-import Search_Icon from '../../Img/Logo/search-icon-png-8.png'
+import logo from '../../Img/Logo/logo._TTD_ copy.png'
 import Cart from '../../Img/Logo/shopping_cart_icon_128753.png'
 import './Header.css'
 
@@ -30,7 +31,10 @@ function Header() {
                     <div className='Search_Bar_Wrapper'>
                         <div className='Search_Bar_Wrapper_Second Row'>
                             <div className='col-1 DropdownButton'>
-                                <DropdownButton id="dropdown-basic-button" title="All" style={{height:"100"}}>
+                                <DropdownButton 
+                                    id="dropdown-basic-button" 
+                                    title="All"
+                                    style={{}} >
 
 
                                     <Dropdown.Item href="#">Beauty</Dropdown.Item>
@@ -49,7 +53,9 @@ function Header() {
                                 <div className='Search-bar'>
                                     <form action="">
                                         <input type="text" placeholder='Search Amazon' />
-                                        <button type='submit' ><img src={Search_Icon} alt="Search_Icon" /></button>
+                                        <button type='submit' >
+                                            <FaSearch />
+                                        </button>
                                     </form>
                                 </div>
                             </div>
@@ -105,10 +111,10 @@ function Header() {
                             <p>Return <br /> <h6>$ Orders</h6></p>
                         </a>
                     </div>
-                    <div style={{ display: "flex" }}>
+                    <div style={{ display: "flex" }} className='Cart-Icon'>
                         <div>
                             <h5>{amount}</h5>
-                            <img src={Cart} alt="Cart-Image" />
+                            <button><FaShoppingCart /></button>
                         </div>
                         <p>Basket</p>
                     </div>

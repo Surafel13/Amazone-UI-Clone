@@ -1,11 +1,17 @@
+.Main_Wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
 .Header-Wrapper {
     display: flex;
     justify-content: center;
     gap: 10px;
-    height: 100px;
+    height: 80px;
     padding: 15px;
-    background-color: #035F40;
+    background: linear-gradient(to left, #046F49, #004134);
     color: white;
+
 }
 
 .Header-Wrapper img {
@@ -14,31 +20,26 @@
 }
 
 .Search_Bar_Wrapper {    
-    width: 1000px;
+    width: 850px;
+    height: 10px;
 }
 
 .Search_Bar_Wrapper_Second {
-    gap: 0px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
     border: solid black;
     width: 100%;
-}
-
-.Search-bar{
-    max-width: 100%;
-}
-
-.Search-bar img {
-    width: 70px;
+    height: 50px;
+    position: relative;
 }
 
 .Search-bar form input{
     width: 88%;
-    height: 57px;
+    height: 50px;
     padding: 20px;
 }
+
 
 
 
@@ -54,10 +55,31 @@
     gap: 30px;
 }
 
-.DropdownButton{
-    /* height: 90px; */
-    padding: 0px;
+.Search-bar .DropdownButton{
+  height: 50px;        
+  line-height: 50px;   
+  font-size: 16px; 
+  background-color: white;
+}
 
+.Search-bar form button{
+    width: 7%;
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #A9176F;
+    color: white;
+
+}
+.Cart-Icon{
+    width: 50px;
+}
+.Cart-Icon button{
+    width: 40px;
+    background-color: #046F49;
+    border-color: #046F49;
+    color: white;
+    
 }
 
 

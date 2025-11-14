@@ -24,9 +24,9 @@ function Header() {
             <div className='Main_Wrapper'>
                 <div className='Header-Wrapper'>
 
-                    <div className='Amazone-Logo'><a href="#"><img src={logo} alt="Amazone-Logo" /></a></div>
+                    <div className='Amazone-Logo '><a href="#" className='HoverBorderEffect'>< img src={logo} alt="Amazone-Logo" /></a></div>
 
-                    <div className='Header-Text' style={{ fontSize: "14px" }}><p>Deliverd to<br />Ethiopia</p></div>
+                    <div className='Header-Text HoverBorderEffect' style={{ fontSize: "15px", padding: '0px 5px 0 2px' }}><p>Deliverd to<br />Ethiopia</p></div>
 
                     <div className='Search_Bar_Wrapper'>
                         <div className='Search_Bar_Wrapper_Second Row'>
@@ -34,7 +34,15 @@ function Header() {
                                 <DropdownButton 
                                     id="dropdown-basic-button" 
                                     title="All"
-                                    style={{}} >
+                                    variant='white'
+                                    style={{
+                                        backgroundColor : "white",
+                                        color : 'black',
+                                        height : "100%",
+                                        borderTopLeftRadius : '9px',
+                                        borderBottomLeftRadius : '9px'
+                                        
+}} >
 
 
                                     <Dropdown.Item href="#">Beauty</Dropdown.Item>
@@ -98,37 +106,38 @@ function Header() {
                         </DropdownButton>
 
                     </div>
-                    <div className='Header-Text'>
-                        <a href="#">
-                            <p>Hello, sign in <br /> <h6>Account $ list</h6></p>
+                    <div className='Header-Text '>
+                        <a href="#" className='HoverBorderEffect'>
+                            <p>Hello, sign in <br /> Account $ list</p>
                         </a>
                         <div style={{ display: "none" }}>
                             <button>Sign in</button>
                         </div>
                     </div>
-                    <div className='Header-Text'>
-                        <a href="#">
-                            <p>Return <br /> <h6>$ Orders</h6></p>
+                    <div className='Header-Text '>
+                        <a href="#" className='HoverBorderEffect'>
+                            <p>Return <br /> $ Orders</p>
                         </a>
                     </div>
-                    <div style={{ display: "flex" }} className='Cart-Icon'>
-                        <div>
-                            <h5>{amount}</h5>
-                            <button><FaShoppingCart /></button>
+                    <div className='Cart-Icon HoverBorderEffect'>
+                        <div >
+                            <a href="#" >
+                                {amount} 
+                                <FaShoppingCart />
+                            </a>
                         </div>
-                        <p>Basket</p>
                     </div>
                 </div>
                 <div className='Second-Header-Wrapper'>
                     <div className='Second-Header-List'>
                         <ul>
-                            <li><a href="#">All</a></li>
-                            <li><a href="#">Today's Deal</a></li>
-                            <li><a href="#">Prime Video</a></li>
-                            <li><a href="#">Registry</a></li>
-                            <li><a href="#">Gift Cards</a></li>
-                            <li><a href="#">Coustemer Services</a></li>
-                            <li><a href="#">Sell</a></li>
+                            <li className='HoverBorderEffect'><a href="#">All</a></li>
+                            <li className='HoverBorderEffect'><a href="#">Today's Deal</a></li>
+                            <li className='HoverBorderEffect'><a href="#">Prime Video</a></li>
+                            <li className='HoverBorderEffect'><a href="#">Registry</a></li>
+                            <li className='HoverBorderEffect'><a href="#">Gift Cards</a></li>
+                            <li className='HoverBorderEffect'><a href="#">Coustemer Services</a></li>
+                            <li className='HoverBorderEffect'><a href="#">Sell</a></li>
                         </ul>
                     </div>
                 </div>

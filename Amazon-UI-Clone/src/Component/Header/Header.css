@@ -6,7 +6,7 @@
 .Header-Wrapper {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
     height: 80px;
     padding: 15px;
     background: linear-gradient(to left, #046F49, #004134);
@@ -17,6 +17,9 @@
 .Header-Wrapper img {
     height: 100%;
     width: auto;
+    position: relative;
+    left: -17px;
+    padding: 3px;
 }
 
 .Search_Bar_Wrapper {    
@@ -28,7 +31,6 @@
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    border: solid black;
     width: 100%;
     height: 50px;
     position: relative;
@@ -65,21 +67,22 @@
 .Search-bar form button{
     width: 7%;
     height: 50px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
     background-color: #A9176F;
     color: white;
 
 }
-.Cart-Icon{
-    width: 50px;
+
+.Cart-Icon {
+    width: 20px;
+    padding: 0px 10px;
 }
-.Cart-Icon button{
-    width: 40px;
+
+.Cart-Icon a{
     background-color: #046F49;
     border-color: #046F49;
     color: white;
-    
 }
 
 
@@ -90,4 +93,10 @@
 .Header-Text a{
     color: white;
     font-size: 14px;
+    padding-right: 3px;
+}
+
+.HoverBorderEffect :hover{
+    border: solid white 2px;
+    padding: 0px 3px;
 }

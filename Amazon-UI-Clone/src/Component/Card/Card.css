@@ -1,0 +1,10 @@
+.Main-Wrapper{
+    display: flex;
+    gap: 20px;
+    margin: 0px 20px;
+}
+
+.Card-Wrapper{
+    width: 790PX;
+    height: 700px;
+}

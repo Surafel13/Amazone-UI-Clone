@@ -5,7 +5,7 @@ import './Style/App.css'
 
 import Header from './Component/Header/Header'
 import CaraouselEffect from './Component/CarouselEffect/CaraouselEffect';
-import Card from './Component/Card/Card';x
+import Card from './Component/Card/Card';
 import './Main.css'
 
 function App() {

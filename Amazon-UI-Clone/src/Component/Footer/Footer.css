@@ -1,0 +1,57 @@
+.AboveFotter{
+    background-color: #FFFFFF;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    margin-top: -450px;
+    text-align: center;
+}
+
+.AboveFotter button{
+    width: 260px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #FFCE12;
+    border: none;
+}
+
+.InnerFooter{
+    padding: 20px 0px;
+}
+
+.LinkToHeader{
+    background-color: #37475A;
+    text-align: center;
+    padding: 20px;
+}
+.LinkToHeader:hover{
+    background-color: #485769;
+}
+
+
+.LinkToHeader a, .SecondFooter a{
+    color: #DDDDDD;
+    font-size: 15px;
+}
+.NoteWrapper{
+    background-color: hsl(213, 28%, 19%);
+}
+
+
+.SecondFooter{
+    padding-top: 33px;
+    padding-bottom: 85px;
+    color: white;
+    text-align: left;
+    margin: 0px auto;
+    width: 74%;
+}
+
+.SecondFooter h4{
+    font-size: 17px;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+.SecondFooter a:hover{
+    text-decoration: underline;
+}

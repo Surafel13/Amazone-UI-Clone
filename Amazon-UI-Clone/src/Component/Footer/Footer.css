@@ -32,7 +32,7 @@
     color: #DDDDDD;
     font-size: 15px;
 }
-.NoteWrapper{
+.NoteWrapper, .Main_Lower_Footer_Wrapper{
     background-color: hsl(213, 28%, 19%);
 }
 
@@ -54,4 +54,31 @@
 
 .SecondFooter a:hover{
     text-decoration: underline;
+}
+
+.Main_Lower_Footer_Wrapper{
+    width: 100%;
+    border-top: #DDDDDD 0.5px solid;
+    justify-content: center;
+}
+
+
+.Logo_Wrapper{
+    padding: 30px 0px;
+    margin: 0px auto;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+}
+
+.Logo_Wrapper span{
+    color: #E3E6E6;
+    background-color: hsl(213, 28%, 19%);
+    border: #E3E6E6 0.5px solid;
+    padding: 1px 4px;
+}
+
+.Logo_Wrapper img{
+    margin-right: 200px;
+    margin-left: 100px;
 }

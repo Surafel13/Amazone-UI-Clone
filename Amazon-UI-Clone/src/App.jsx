@@ -7,6 +7,7 @@ import Header from './Component/Header/Header'
 import Footer from './Component/Footer/Footer';
 import CaraouselEffect from './Component/CarouselEffect/CaraouselEffect';
 import Card from './Component/Card/Card';
+import LowerFooter from './Component/Footer/LowerFooter';
 import './Main.css'
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
     <Header/>
     <CaraouselEffect />
     <Card />
-    <Footer />
+    <Footer/>
+    <LowerFooter />
     </div >
   )
 }

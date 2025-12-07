@@ -82,3 +82,61 @@
     margin-right: 200px;
     margin-left: 100px;
 }
+
+
+.Link_Wrapper_Head{
+    background-color: #131A22;
+}
+
+
+.Link_Wrapper{
+    padding: 50px 0px;
+    margin: 0px auto;
+    display: flex;
+    gap: 20px;
+    width: 70%
+}
+
+.Link_Wrapper a{
+    color: #99998A;
+    font-size: 12px;
+    
+}
+
+.Link_Wrapper a:hover{
+    text-decoration: underline;
+}
+
+.Link_Wrapper b{
+    color: #DDDDDD;
+    margin-top: 20px;
+}
+
+.text{
+    width: 17%;
+}
+
+.bottom{
+    display: flex;
+    gap: 22px;
+    background-color: #131A22;
+    justify-content: center;
+}
+
+.bottom a{
+    color: white;
+    font-size: 12px;
+
+}
+
+.bottom a:hover{
+    text-decoration: underline;
+}
+
+.AllRight{
+    background-color: #131A22;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+}

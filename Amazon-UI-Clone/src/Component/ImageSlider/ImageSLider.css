@@ -1,0 +1,29 @@
+.bhh{
+    background-color: black;
+}
+
+.slick-prev {
+    left: 10px !important;
+    z-index: 10;
+}
+
+.slick-next {
+    right: 10px !important;
+    z-index: 10;
+}
+
+.BookContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    gap: 20px;
+    
+}
+
+.slider-container1{
+    background-color: white;
+    padding: 20px;
+    margin-top: -520px;
+    margin-bottom: 180px;
+    
+}

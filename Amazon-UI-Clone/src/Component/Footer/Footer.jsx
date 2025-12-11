@@ -4,7 +4,7 @@ import './Footer.css'
 function Footer() {
     return (
         <div>
-            <div className='AboveFotter'>
+            <div className='AboveFotter w-100'>
                 <hr />
                 <div className='InnerFooter'>
                     <div>

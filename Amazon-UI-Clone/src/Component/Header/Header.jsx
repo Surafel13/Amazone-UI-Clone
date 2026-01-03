@@ -4,7 +4,6 @@ import { FaShoppingCart } from "react-icons/fa";
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import logo from '../../Img/Logo/logo._TTD_ copy.png'
-import Cart from '../../Img/Logo/shopping_cart_icon_128753.png'
 import './Header.css'
 
 function Header() {
@@ -21,30 +20,29 @@ function Header() {
         <>
 
 
-            <div className='Main_Wrapper'>
+            <header className='Main_Wrapper'>
                 <div className='Header-Wrapper'>
+                    {/* Logo */}
+                    <div className='Amazone-Logo HoverBorderEffect'>
+                        <a href="/">
+                            <img src={logo} alt="Amazon Logo" />
+                        </a>
+                    </div>
 
-                    <div className='Amazone-Logo '><a href="#" className='HoverBorderEffect'>< img src={logo} alt="Amazone-Logo" /></a></div>
+                    {/* Deliver to */}
+                    <div className='Header-Text Deliver-To HoverBorderEffect'>
+                        <p>Deliver to <br /> <span>Ethiopia</span></p>
+                    </div>
 
-                    <div className='Header-Text HoverBorderEffect' style={{ fontSize: "15px", padding: '0px 5px 0 2px' }}><p>Deliverd to<br />Ethiopia</p></div>
-
+                    {/* Search Bar */}
                     <div className='Search_Bar_Wrapper'>
-                        <div className='Search_Bar_Wrapper_Second Row'>
-                            <div className='col-1 DropdownButton'>
-                                <DropdownButton 
-                                    id="dropdown-basic-button" 
+                        <div className='Search_Bar_Wrapper_Second'>
+                            <div className='DropdownButton'>
+                                <DropdownButton
+                                    id="dropdown-basic-button"
                                     title="All"
-                                    variant='white'
-                                    style={{
-                                        backgroundColor : "white",
-                                        color : 'black',
-                                        height : "100%",
-                                        borderTopLeftRadius : '9px',
-                                        borderBottomLeftRadius : '9px'
-                                        
-}} >
-
-
+                                    variant='light'
+                                >
                                     <Dropdown.Item href="#">Beauty</Dropdown.Item>
                                     <Dropdown.Item href="#">Gaming</Dropdown.Item>
                                     <Dropdown.Item href="#">Movies</Dropdown.Item>
@@ -53,97 +51,96 @@ function Header() {
                                     <Dropdown.Item href="#">Women's Fashion</Dropdown.Item>
                                     <Dropdown.Item href="#">Kids's Fashion</Dropdown.Item>
                                     <Dropdown.Item href="#">Men's Fashion</Dropdown.Item>
-
                                 </DropdownButton>
-
                             </div>
-                            <div className='col-11'>
-                                <div className='Search-bar'>
-                                    <form action="">
-                                        <input type="text" placeholder='Search Amazon' />
-                                        <button type='submit' >
-                                            <FaSearch />
-                                        </button>
-                                    </form>
-                                </div>
+                            <div className='Search-bar'>
+                                <form action="">
+                                    <input type="text" placeholder='Search Amazon' />
+                                    <button type='submit' aria-label="Search">
+                                        <FaSearch />
+                                    </button>
+                                </form>
                             </div>
                         </div>
                     </div>
 
-
-                    <div>
-                        <DropdownButton id="dropdown-language"
+                    {/* Language Select */}
+                    <div className='Header-Text optional'>
+                        <DropdownButton
+                            id="dropdown-language"
                             title={language}
-                            variant="light"
+                            variant="dark"
                             align="end"
-                            style={{ border: '1px solid #ccc', borderRadius: '5px'}} >
-                            <div style={{width:"200px", padding:"5px"}}>
-                                <p>Change Language</p>
-
+                            className="language-dropdown"
+                        >
+                            <div style={{ width: "200px", padding: "10px", color: "black" }}>
+                                <p style={{ fontWeight: 'bold' }}>Change Language</p>
                                 <Dropdown.Item as="button" onClick={() => lang_Handler('EN')}>
-                                    <input type="radio"
-                                        checked={language === 'EN'}
-                                        onChange={() => lang_Handler('EN')} />
-                                    <span>English</span>
+                                    <input type="radio" checked={language === 'EN'} readOnly />
+                                    <span style={{ marginLeft: '5px' }}>English - EN</span>
                                 </Dropdown.Item>
-
-                                <hr />
-
                                 <Dropdown.Item as="button" onClick={() => lang_Handler('ES')}>
-                                    <input type="radio"
-                                        checked={language === 'ES'}
-                                        onChange={() => lang_Handler('ES')} />
-                                    <span>español</span>
+                                    <input type="radio" checked={language === 'ES'} readOnly />
+                                    <span style={{ marginLeft: '5px' }}>español - ES</span>
                                 </Dropdown.Item>
-
                                 <hr />
-                                <p>You are shoping <br />on Amazon.com</p>
-                                <p style={{ display: "flex", gap: "18px" }}>Change country<a href="#">Change</a></p>
+                                <p>You are shopping on <br />Amazon.com</p>
+                                <a href="#" style={{ color: '#007185', fontSize: '12px' }}>Change country/region</a>
                             </div>
-
-
-
                         </DropdownButton>
+                    </div>
 
-                    </div>
-                    <div className='Header-Text '>
-                        <a href="#" className='HoverBorderEffect'>
-                            <p>Hello, sign in <br /> Account $ list</p>
-                        </a>
-                        <div style={{ display: "none" }}>
-                            <button>Sign in</button>
-                        </div>
-                    </div>
-                    <div className='Header-Text '>
-                        <a href="#" className='HoverBorderEffect'>
-                            <p>Return <br /> $ Orders</p>
+                    {/* Sign In */}
+                    <div className='Header-Text HoverBorderEffect'>
+                        <a href="#">
+                            <p>Hello, sign in <br /> <span>Account & Lists</span></p>
                         </a>
                     </div>
+
+                    {/* Returns & Orders */}
+                    <div className='Header-Text optional HoverBorderEffect'>
+                        <a href="#">
+                            <p>Returns <br /> <span>& Orders</span></p>
+                        </a>
+                    </div>
+
+                    {/* Cart */}
                     <div className='Cart-Icon HoverBorderEffect'>
-                        <div >
-                            <a href="#" >
-                                {amount} 
+                        <a href="#">
+                            <div style={{ position: 'relative' }}>
+                                <span style={{
+                                    position: 'absolute',
+                                    top: '-10px',
+                                    right: '-5px',
+                                    backgroundColor: '#f08804',
+                                    borderRadius: '50%',
+                                    padding: '2px 6px',
+                                    fontSize: '12px',
+                                    color: 'black'
+                                }}>{amount}</span>
                                 <FaShoppingCart />
-                            </a>
-                        </div>
+                            </div>
+                            <span className='optional'>Cart</span>
+                        </a>
                     </div>
                 </div>
-                <div className='Second-Header-Wrapper'>
+
+                {/* Sub Header */}
+                <nav className='Second-Header-Wrapper'>
                     <div className='Second-Header-List'>
                         <ul>
                             <li className='HoverBorderEffect'><a href="#">All</a></li>
-                            <li className='HoverBorderEffect'><a href="#">Today's Deal</a></li>
+                            <li className='HoverBorderEffect'><a href="#">Today's Deals</a></li>
                             <li className='HoverBorderEffect'><a href="#">Prime Video</a></li>
                             <li className='HoverBorderEffect'><a href="#">Registry</a></li>
                             <li className='HoverBorderEffect'><a href="#">Gift Cards</a></li>
-                            <li className='HoverBorderEffect'><a href="#">Coustemer Services</a></li>
+                            <li className='HoverBorderEffect'><a href="#">Customer Service</a></li>
                             <li className='HoverBorderEffect'><a href="#">Sell</a></li>
                         </ul>
                     </div>
-                </div>
+                </nav>
+            </header>
 
-
-            </div >
         </>
     )
 }

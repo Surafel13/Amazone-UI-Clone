@@ -59,17 +59,17 @@ function ImageSlider() {
   };
 
   return (
-    <div className="py-8 bg-gray-50 slider-container1 mx-3">
-      <div className="max-w-7xl mx-auto px-4">
-        <h3 className="text-2xl font-bold mb-6">Top Sellers in Books for you</h3>
-        
+    <div className="slider-container1">
+      <div className="slider-inner-wrapper">
+        <h3 className="slider-title">Top Sellers in Books for you</h3>
+
         <Slider {...settings}>
           {images.map((img, index) => (
             <div key={index} className="px-2">
               <div className="text-center" >
                 <a href="#" className="block hover:opacity-90 transition">
-                  <img 
-                    src={img} 
+                  <img
+                    src={img}
                     alt={`Book ${index + 1}`}
                     className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow mx-auto"
                     style={{ maxHeight: '280px', objectFit: 'contain' }}

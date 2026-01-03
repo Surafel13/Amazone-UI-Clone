@@ -6,17 +6,16 @@ function SingleImgCard(props) {
 
   return (
     <>
-      <div className='Main-wrapper'>
-
-        <div ><h3 style={{ marginBottom: '15px' }}>{props.Title}</h3></div>
+      <div className='Main-card-container'>
+        <h3>{props.Title}</h3>
 
         <div className='Image-wrapper row'>
-          <div className='col-6 Single-Img'>
-            <img src={props.ImgUrl1} alt="img" />
+          <div className='col-12 Single-Img'>
+            <img src={props.ImgUrl1} alt="" />
           </div>
-        </div><br />
+        </div>
 
-        <div><a href="#">{props.link}</a></div>
+        <a href="#">{props.link}</a>
       </div>
     </>
   )

@@ -1,11 +1,30 @@
-.Main-Wrapper{
-    display: flex;
-    justify-content: center;
+.Card-Grid-Container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin: 0px 20px;
+    padding: 0 20px;
+    margin-top: -280px;
+    /* Overlap the carousel */
+    position: relative;
+    z-index: 10;
 }
 
-.Card-Wrapper{
-    width: 790PX;
-    height: 700px;
+@media (max-width: 1200px) {
+    .Card-Grid-Container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Card-Grid-Container {
+        grid-template-columns: 1fr;
+        margin-top: -50px;
+        padding: 0 10px;
+    }
+}
+
+.Card-Wrapper {
+    /* Keep card consistency */
+    min-width: 250px;
 }

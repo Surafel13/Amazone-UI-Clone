@@ -1,139 +1,149 @@
-.AboveFotter{
+.AboveFotter {
     background-color: #FFFFFF;
-    padding: 10px 0px;
-    margin-bottom: 10px;
-    margin-top: -150px;
+    padding: 30px 0;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
     text-align: center;
 }
 
-.AboveFotter button{
-    width: 260px;
-    border-radius: 20px;
-    padding: 5px;
+.AboveFotter button {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 4px;
+    padding: 10px;
     background-color: #FFCE12;
-    border: none;
+    border: 1px solid #a88734;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.InnerFooter{
+
+.InnerFooter {
     padding: 20px 0px;
 }
 
-.LinkToHeader{
+.LinkToHeader {
     background-color: #37475A;
     text-align: center;
     padding: 20px;
 }
-.LinkToHeader:hover{
+
+.LinkToHeader:hover {
     background-color: #485769;
 }
 
 
-.LinkToHeader a, .SecondFooter a{
+.LinkToHeader a,
+.SecondFooter a {
     color: #DDDDDD;
     font-size: 15px;
 }
-.NoteWrapper, .Main_Lower_Footer_Wrapper{
+
+.NoteWrapper,
+.Main_Lower_Footer_Wrapper {
     background-color: hsl(213, 28%, 19%);
 }
 
 
-.SecondFooter{
-    padding-top: 33px;
-    padding-bottom: 85px;
+.SecondFooter {
+    padding-top: 40px;
+    padding-bottom: 50px;
     color: white;
     text-align: left;
-    margin: 0px auto;
-    width: 74%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.SecondFooter h4{
+.SecondFooter h4 {
     font-size: 17px;
     padding-bottom: 4px;
     font-weight: bold;
 }
 
-.SecondFooter a:hover{
+.SecondFooter a:hover {
     text-decoration: underline;
 }
 
-.Main_Lower_Footer_Wrapper{
+.Main_Lower_Footer_Wrapper {
     width: 100%;
     border-top: #DDDDDD 0.5px solid;
     justify-content: center;
 }
 
 
-.Logo_Wrapper{
-    padding: 30px 0px;
-    margin: 0px auto;
-    width: 60%;
+.Logo_Wrapper {
+    padding: 30px 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.Logo_Wrapper span{
-    color: #E3E6E6;
-    background-color: hsl(213, 28%, 19%);
-    border: #E3E6E6 0.5px solid;
-    padding: 1px 4px;
-}
-
-.Logo_Wrapper img{
-    margin-right: 200px;
-    margin-left: 100px;
+.Logo_Wrapper img {
+    height: 35px;
 }
 
 
-.Link_Wrapper_Head{
+.Link_Wrapper_Head {
     background-color: #131A22;
 }
 
 
-.Link_Wrapper{
-    padding: 50px 0px;
-    margin: 0px auto;
+.Link_Wrapper {
+    padding: 50px 20px;
+    margin: 0 auto;
     display: flex;
-    gap: 20px;
-    width: 70%
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
 }
 
-.Link_Wrapper a{
+.Link_Wrapper a {
     color: #99998A;
     font-size: 12px;
-    
+
 }
 
-.Link_Wrapper a:hover{
+.Link_Wrapper a:hover {
     text-decoration: underline;
 }
 
-.Link_Wrapper b{
+.Link_Wrapper b {
     color: #DDDDDD;
     margin-top: 20px;
 }
 
-.text{
+.text {
     width: 17%;
 }
 
-.bottom{
+.bottom {
     display: flex;
     gap: 22px;
     background-color: #131A22;
     justify-content: center;
 }
 
-.bottom a{
+.bottom a {
     color: white;
     font-size: 12px;
 
 }
 
-.bottom a:hover{
+.bottom a:hover {
     text-decoration: underline;
 }
 
-.AllRight{
+.AllRight {
     background-color: #131A22;
     color: white;
     font-size: 12px;

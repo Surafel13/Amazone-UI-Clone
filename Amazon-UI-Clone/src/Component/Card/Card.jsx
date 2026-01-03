@@ -31,10 +31,9 @@ import img18 from '../../Img/CardImg/Fuji_SingleImageCard_1x._SY304_CB797652893_
 function Card() {
   return (
     <>
-      <div className='Main-Wrapper'>
+      <div className='Card-Grid-Container'>
         <div className='Card-Wrapper'>
           <CardProps
-            className=''
             Title={"Shop gifts by price"}
             ImgUrl1={img1}
             name1={"Under 10$"}
@@ -44,12 +43,11 @@ function Card() {
             name3={"Under 50$"}
             ImgUrl4={img4}
             name4={"Deals"}
-            link={"Discover for more Holiday."} />
+            link={"Discover more Holiday."} />
         </div>
         <div className='Card-Wrapper'>
           <CardProps
-            className=''
-            Title={"Shop gifts by price"}
+            Title={"Shop gifts by recipient"}
             ImgUrl1={img5}
             name1={"For him"}
             ImgUrl2={img6}
@@ -62,71 +60,62 @@ function Card() {
         </div>
         <div className='Card-Wrapper'>
           <SingleImgCard
-            className=''
             Title='Get your game on'
             ImgUrl1={img9}
             link='Explore holiday gifts'
-
           />
         </div>
         <div className='Card-Wrapper'>
           <CardProps
-            Title={"Shop for your home "}
+            Title={"Shop for your home"}
             ImgUrl1={img11}
             name1={"Cleaning Tools"}
             ImgUrl2={img10}
             name2={"Home Storage"}
             ImgUrl3={img12}
-            name3={"Home Decore"}
+            name3={"Home Decor"}
             ImgUrl4={img13}
             name4={"Bedding"}
-            link={"Shop all gift"} />
+            link={"Shop all houseware"} />
         </div>
 
-
-      </div>
-      <div className='Main-Wrapper ' style={{ marginTop: '-270px' }}>
         <div className='Card-Wrapper'>
           <CardProps
-            className=''
             Title={"Shop gifts by category"}
             ImgUrl1={img14}
             name1={"Toys"}
             ImgUrl2={img15}
             name2={"Home and kitchen"}
             ImgUrl3={img16}
-            name3={"For kid"}
+            name3={"Electronics"}
             ImgUrl4={img17}
-            name4={"For teens"}
+            name4={"Fitness & Fashion"}
             link={"Shop all gift"} />
         </div>
         <div className='Card-Wrapper'>
           <CardProps
-            Title={"Shop gifts by price"}
+            Title={"Holiday Deals"}
             ImgUrl1={img10}
-            name1={"For him"}
+            name1={"Home"}
             ImgUrl2={img11}
-            name2={"For her"}
+            name2={"Kitchen"}
             ImgUrl3={img12}
-            name3={"For kid"}
+            name3={"Beauty"}
             ImgUrl4={img13}
-            name4={"For teens"}
-            link={"Shop all gift"} />
+            name4={"Fashion"}
+            link={"See all deals"} />
         </div>
 
         <div className='Card-Wrapper'>
           <SingleImgCard
-            className=''
             Title='Shop holiday gift guides'
             ImgUrl1={img18}
             link='Explore holiday gifts'
-
           />
         </div>
         <div className='Card-Wrapper'>
           <CardProps
-            className=''
-            Title={"Shop gifts by price"}
+            Title={"Small business gifts"}
             ImgUrl1={img1}
             name1={"Under 10$"}
             ImgUrl2={img2}
@@ -134,12 +123,9 @@ function Card() {
             ImgUrl3={img3}
             name3={"Under 50$"}
             ImgUrl4={img4}
-            name4={"Deals"}
-            link={"Discover for more Holiday."} />
+            name4={"Handmade"}
+            link={"Discover more"} />
         </div>
-
-
-
       </div>
     </>
 

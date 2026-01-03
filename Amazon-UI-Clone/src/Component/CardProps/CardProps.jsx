@@ -5,30 +5,29 @@ import './CardProps.css'
 function CardProps(props) {
     return (
         <>
-            <div className='Main-wrapper'>
+            <div className='Main-card-container'>
+                <h3>{props.Title}</h3>
 
-                <div ><h3 style={{marginBottom:'15px'}}>{props.Title}</h3></div>
-
-                <div className='Image-wrapper row'>
+                <div className='Image-wrapper row g-3'>
                     <div className='col-6'>
-                        <img src={props.ImgUrl1} alt="img" />
+                        <img src={props.ImgUrl1} alt="" />
                         <p>{props.name1}</p>
                     </div>
                     <div className='col-6'>
-                        <img src={props.ImgUrl2} alt="img" />
+                        <img src={props.ImgUrl2} alt="" />
                         <p>{props.name2}</p>
                     </div>
                     <div className='col-6'>
-                        <img src={props.ImgUrl3} alt="img" />
+                        <img src={props.ImgUrl3} alt="" />
                         <p>{props.name3}</p>
                     </div>
-                    <div className='col-6' >
-                        <img src={props.ImgUrl4} alt="img" />
+                    <div className='col-6'>
+                        <img src={props.ImgUrl4} alt="" />
                         <p>{props.name4}</p>
                     </div>
                 </div>
 
-                <div><a href="#">{props.link}</a></div>
+                <a href="#">{props.link}</a>
             </div>
         </>
     )

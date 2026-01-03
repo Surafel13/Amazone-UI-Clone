@@ -11,14 +11,17 @@ import img5 from '../../Img/CarasouleImg/619geyiQI5L._SX3000_.jpg';
 
 function CaraouselEffect() {
     return (
-        <>
-            <Carousel indicators={false}>
-                
+        <section className="Carousel-Container">
+            <Carousel
+                indicators={false}
+                prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon custom-icon" />}
+                nextIcon={<span aria-hidden="true" className="carousel-control-next-icon custom-icon" />}
+            >
                 <Carousel.Item>
                     <img
                         className="d-block w-100 fade-bottom"
                         src={img1}
-                        alt="Slide 1"
+                        alt="Amazon Hero Slide 1"
                     />
                 </Carousel.Item>
 
@@ -26,7 +29,7 @@ function CaraouselEffect() {
                     <img
                         className="d-block w-100 fade-bottom"
                         src={img2}
-                        alt="Slide 2"
+                        alt="Amazon Hero Slide 2"
                     />
                 </Carousel.Item>
 
@@ -34,7 +37,7 @@ function CaraouselEffect() {
                     <img
                         className="d-block w-100 fade-bottom"
                         src={img3}
-                        alt="Slide 3"
+                        alt="Amazon Hero Slide 3"
                     />
                 </Carousel.Item>
 
@@ -42,7 +45,7 @@ function CaraouselEffect() {
                     <img
                         className="d-block w-100 fade-bottom"
                         src={img4}
-                        alt="Slide 4"
+                        alt="Amazon Hero Slide 4"
                     />
                 </Carousel.Item>
 
@@ -50,12 +53,11 @@ function CaraouselEffect() {
                     <img
                         className="d-block w-100 fade-bottom"
                         src={img5}
-                        alt="Slide 5"
+                        alt="Amazon Hero Slide 5"
                     />
                 </Carousel.Item>
-
             </Carousel>
-        </>
+        </section>
     );
 }
 
